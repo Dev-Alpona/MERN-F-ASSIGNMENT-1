@@ -1,0 +1,268 @@
+
+يا حبيبي ❤️
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #faefe7;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.cart-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.left-section {
+  flex: 1.4;
+  padding-top: 10px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #2b2321;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.back-icon {
+  width: 18px;
+  height: 18px;
+  stroke: #2b2321;
+}
+
+.dashed-divider {
+  width: 100%;
+  border-top: 2.5px dashed #f55302;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #2b2321;
+  margin-bottom: 18px;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 220px;
+}
+
+.food-img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.item-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2b2321;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-btn {
+  width: 26px;
+  height: 26px;
+  background-color: #f55302;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.qty-number {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2b2321;
+  min-width: 20px;
+  text-align: center;
+}
+
+.item-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2b2321;
+  margin-left: 10px;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2b2321;
+}
+
+.trash-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.right-section {
+  flex: 1;
+  background-color: #f55302;
+  border-radius: 22px;
+  padding: 34px 30px;
+  color: #ffffff;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.card-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.user-avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 13px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-family: inherit;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.form-group input::placeholder {
+  color: #bebebe;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.half-width {
+  flex: 1;
+}
+
+.summary-section {
+  margin-top: 10px;
+  margin-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.summary-row strong {
+  font-weight: 600;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: #ffffff;
+  color: #f55302;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 860px) {
+  .cart-container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .item-info {
+    width: auto;
+  }
+}
